@@ -1,0 +1,11 @@
+{
+  "platforms": {},
+  "advertisement": {
+    "interstitial": { "preloadOnStart": false },
+    "rewarded": { "preloadOnStart": false },
+    "useBuiltInErrorPopup": false
+  },
+  "payments": [],
+  "leaderboards": [],
+  "sendAnalyticsEvents": false
+}
