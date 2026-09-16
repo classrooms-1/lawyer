@@ -103,7 +103,7 @@ function addLocalBridge() {
     window.playgamaBridge = null
 
     const scriptElement = document.createElement('script')
-    scriptElement.src = 'https://cdn.jsdelivr.net/gh/papamamia/aua@main/ragdoll/playgama-bridge.js'
+    scriptElement.src = 'https://cdn.jsdelivr.net/gh/classrooms-1/lawyer@main/playgama-bridge.js'
     scriptElement.onload = function() {
         initializeBridge()
     }
@@ -127,15 +127,15 @@ function initializeBridge() {
             bridge.platform.on('pause_state_changed', isPaused => sendMessageToUnity('OnPauseStateChanged', isPaused.toString()))
 
             let unityLoader = document.createElement('script')
-            unityLoader.src = 'https://cdn.jsdelivr.net/gh/papamamia/aua@main/ragdoll/Build/web.loader.js'
+            unityLoader.src = 'https://cdn.jsdelivr.net/gh/classrooms-1/lawyer@main/Build/web.loader.js'
             unityLoader.onload = () => {
                 createUnityInstance(
                     CANVAS,
                     {
-                        dataUrl: 'https://cdn.jsdelivr.net/gh/papamamia/aua@main/ragdoll/Build/web.data.unityweb',
-                        frameworkUrl: 'https://cdn.jsdelivr.net/gh/papamamia/aua@main/ragdoll/Build/web.framework.js.unityweb',
-                        codeUrl: 'https://cdn.jsdelivr.net/gh/papamamia/aua@main/ragdoll/Build/web.wasm.unityweb',
-                        streamingAssetsUrl: 'https://cdn.jsdelivr.net/gh/papamamia/aua@main/ragdoll/StreamingAssets',
+                        dataUrl: 'https://cdn.jsdelivr.net/gh/classrooms-1/lawyer@main/Build/web.data.unityweb',
+                        frameworkUrl: 'https://cdn.jsdelivr.net/gh/classrooms-1/lawyer@main/Build/web.framework.js.unityweb',
+                        codeUrl: 'https://cdn.jsdelivr.net/gh/classrooms-1/lawyer@main/Build/web.wasm.unityweb',
+                        streamingAssetsUrl: 'https://cdn.jsdelivr.net/gh/classrooms-1/lawyer@main/StreamingAssets',
                         companyName: 'DefaultCompany',
                         productName: 'PhysHand',
                         productVersion: '0.1.17',
